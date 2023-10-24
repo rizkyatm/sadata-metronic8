@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/stockProduct', function () {return view('StockProduct');});
 Route::get('/Product', function () {return view('Product');});
+Route::get('/add-product', function () {return view('add-product');});

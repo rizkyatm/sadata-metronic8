@@ -1398,7 +1398,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <option value="2">Ubah Sekaligus</option>
                                     </select>
 
-                                    <a href="#" class="btn fs-4 w-50px w-md-200px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly">
+                                    <a href="/add-product" class="btn fs-4 w-50px w-md-200px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly">
                                         <i class="fa-solid fa-plus text-center fs-4 text-gray-800"></i>
                                         <em class="d-none d-md-flex">Tambah Produk</em>
                                     </a>
