@@ -437,7 +437,7 @@ License: For each use you must have a valid license purchased only from above li
                                         </a>
                                     </div>
                                     <div class="menu-item">
-                                        <a class="menu-link" href="/Product">
+                                        <a class="menu-link active" href="/Product">
                                             <span class="menu-bullet">
                                                 <i class="fa-solid fa-circle-chevron-right fs-7"></i>
                                             </span>
@@ -856,7 +856,7 @@ License: For each use you must have a valid license purchased only from above li
 
                             {{-- Stock --}}
                             <div class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="/stockProduct">
                                     <span class="menu-icon">
                                         <!--begin::Svg Icon | path: icons/duotune/general/gen014.svg-->
                                         <span>
@@ -1340,7 +1340,6 @@ License: For each use you must have a valid license purchased only from above li
                     <!--end::Toolbar-->
                     <!--end::Toolbar-->
                 </div>
-
                 <!--end::Header-->
                 <!--begin::Content-->
                 <div class="content d-flex flex-column flex-column-fluid " id="kt_content">
@@ -1354,43 +1353,13 @@ License: For each use you must have a valid license purchased only from above li
                                 <h1 style="width: fit-content" class="mb-5">Stock Report</h1>
                                 <div class="d-flex gap-4 w-800px justify-content-end  flex-wrap">
                                     <div class="dropdown">
-                                        <a class="btn fs-4 w-200px w-md-250px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly"
-                                            href="#" role="button" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
-                                            <i class="fa-solid fa-download fs-4 text-gray-800"></i>
-                                            <em class="d-none d-md-flex">Download Laporan</em>
-                                        </a>
-                                        <!--begin::Modal-->
-                                        <div class="modal fade" tabindex="-1" id="kt_modal_1">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title">Modal title</h5>
-                                                        <!--begin::Close-->
-                                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                            data-bs-dismiss="modal" aria-label="Close">
-                                                            <span class="svg-icon fs-2x"></span>
-                                                        </div>
-                                                        <!--end::Close-->
-                                                    </div>
-
-                                                    <div class="modal-body">
-                                                        <div class="mb-0">
-                                                            <label for="" class="form-label">Select date</label>
-                                                            <input class="form-control form-control-solid"
-                                                                placeholder="Pick date" id="kt_datepicker_10" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-light"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--end::Modal-->
+                                        <button class="btn1 btn-sm btn dropdown-toggle fs-4 w-200px w-md-225px h-45px btn-white text-center text-dark border border-gray-500" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-download text-center fs-4 text-gray-800"></i> Download Laporan 
+                                        </button>
+                                        <ul class="dropdown-menu fs-4 w-200px">
+                                            <li><a class="dropdown-item" href="#">Excel (Without Photo)</a></li>
+                                            <li><a class="dropdown-item" href="#">ZIP (Only Photo)</a></li>
+                                        </ul>
                                     </div>
 
                                     <select class="form-select w-175px h-32px fs-4 px mx-0 align-items-center border border-gray-500" aria-label="Select example">
@@ -1398,9 +1367,14 @@ License: For each use you must have a valid license purchased only from above li
                                         <option value="2">Ubah Sekaligus</option>
                                     </select>
 
-                                    <a href="/add-product" class="btn fs-4 w-50px w-md-200px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly">
-                                        <i class="fa-solid fa-plus text-center fs-4 text-gray-800"></i>
-                                        <em class="d-none d-md-flex">Tambah Produk</em>
+                                    <a href="/add-product" class="btn fs-4 w-175px w-md-200px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly">
+                                        <i class="fa-solid fa-plus-square text-center fs-3 text-gray-800"></i>
+                                        <em class="d-md-flex">Tambah Produk</em>
+                                    </a>
+
+                                    <a href="/upload-product" class="btn fs-4 w-100px w-md-125px h-45px btn-white text-center text-dark border border-gray-500 d-flex align-items-center justify-content-evenly">
+                                        <i class="fa-solid fa-cloud-upload text-center fs-4 text-gray-800"></i>
+                                        <em class="d-md-flex">Upload</em>
                                     </a>
                                 </div>
                             </div>
